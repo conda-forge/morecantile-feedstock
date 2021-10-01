@@ -19,12 +19,13 @@ build:
 
 requirements:
   host:
+    - python >=3.7
     - pip
-    - python >=3.0
   run:
+    - python >=3.7
+    - attrs
     - pydantic
-    - python >=3.0
-    - rasterio >=1.1.7
+    - pyproj ~=3.1
 
 test:
   imports:
@@ -44,3 +45,4 @@ about:
 extra:
   recipe-maintainers:
     - lsetiawan
+    - ocefpaf
