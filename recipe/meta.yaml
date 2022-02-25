@@ -1,5 +1,5 @@
 {% set name = "morecantile" %}
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6fba94f778bdab323e4a55742fec38c378d03311ad14c0433febb5038c489598
+  sha256: 2fd814f43466306e576b43902df8400dcf5308a30c88c54822a42e9d32376d21
 
 build:
   number: 0
@@ -24,13 +24,16 @@ requirements:
   run:
     - python >=3.7
     - attrs
+    - click
     - pydantic
     - pyproj ~=3.1
+    - rasterio >=1.2.1
 
 test:
   imports:
     - morecantile
     - morecantile.data
+    - morecantile.scripts.cli
   commands:
     - pip check
   requires:
