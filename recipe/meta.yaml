@@ -24,6 +24,7 @@ requirements:
   run:
     - python >=3.7
     - attrs
+    - click
     - pydantic
     - pyproj ~=3.1
     - rasterio >=1.2.1
@@ -32,6 +33,7 @@ test:
   imports:
     - morecantile
     - morecantile.data
+    - morecantile.scripts.cli
   commands:
     - pip check
   requires:
