@@ -19,14 +19,15 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
+    - flit >=3.2,<4
   run:
-    - python >=3.7
+    - python >=3.8
     - attrs
-    - click
+    - pyproj >=3.1,<4.dev0
     - pydantic
-    - pyproj ~=3.1
+    # optional
     - rasterio >=1.2.1
 
 test:
