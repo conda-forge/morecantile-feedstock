@@ -1,5 +1,5 @@
 {% set name = "morecantile" %}
-{% set version = "3.2.5" %}
+{% set version = "3.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c6ec1b9e63c3b074f34e17a9afd0a911c5186cf797bcb44b1903724f7cd36c35
+  sha256: 0a494e0a7e0d3d96aaec0f6bf1aceeb749667e2033d7aab19f8f0b56e5491441
 
 build:
   number: 0
