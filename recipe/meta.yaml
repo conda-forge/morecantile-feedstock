@@ -27,6 +27,7 @@ requirements:
     - attrs
     - pyproj >=3.1,<4.dev0
     - pydantic
+    - cachetools
     # optional
     - rasterio >=1.2.1
 
