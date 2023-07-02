@@ -1,5 +1,5 @@
 {% set name = "morecantile" %}
-{% set version = "4.2.0" %}
+{% set version = "4.2.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 24b22f9558b5d1a3b0f146c514e3d283c1dfe49fb12fda7aae992b6fd8ff4410
+  sha256: 1230e75c36a36980543a37dadb8661050d49d43b4dd8458b89b2e31acc0d4f33
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - python >=3.8
     - attrs
     - pyproj >=3.1,<4.dev0
-    - pydantic
+    - pydantic >=1.0,<2.dev0
     - cachetools
     # optional
     - rasterio >=1.2.1
