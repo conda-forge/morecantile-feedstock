@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 4445c6fbf741f3ee5d0130d18ec65c917e6d9f98e98a8f9d4a8a60d39c0c3b0a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - morecantile=morecantile.scripts.cli:cli
@@ -19,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - flit-core >=3.2,<4
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - attrs
     - pyproj >=3.1,<4.dev0
     - pydantic >=2.0,<3.dev0
@@ -39,6 +39,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/developmentseed/morecantile
