@@ -1,5 +1,5 @@
 {% set name = "morecantile" %}
-{% set version = "6.1.0" %}
+{% set version = "6.2.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4445c6fbf741f3ee5d0130d18ec65c917e6d9f98e98a8f9d4a8a60d39c0c3b0a
+  sha256: 65c7150ea68bbe16ee6f75f3f171ac1ae51ab26e7a77c92a768048f40f916412
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - morecantile=morecantile.scripts.cli:cli
@@ -25,7 +25,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - attrs
-    - pyproj >=3.1,<4.dev0
+    - pyproj >=3.1,<4.0
     - pydantic >=2.0,<3.dev0
     # optional
     - rasterio >=1.2.1
