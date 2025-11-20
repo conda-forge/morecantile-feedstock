@@ -1,6 +1,6 @@
 {% set name = "morecantile" %}
-{% set version = "6.2.0" %}
-
+{% set version = "7.0.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 65c7150ea68bbe16ee6f75f3f171ac1ae51ab26e7a77c92a768048f40f916412
+  sha256: 4af97ff010eb73a11712f43498917568cf8725e3f2007939d32d61c67797894b
 
 build:
   number: 0
@@ -20,13 +20,14 @@ build:
 requirements:
   host:
     - python {{ python_min }}
+    - hatchling
     - pip
-    - flit-core >=3.2,<4
   run:
     - python >={{ python_min }}
     - attrs
     - pyproj >=3.1,<4.0
     - pydantic >=2.0,<3.dev0
+    - click
     # optional
     - rasterio >=1.2.1
 
