@@ -3,20 +3,25 @@ About morecantile-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/morecantile-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/developmentseed/morecantile
+Home: https://pypi.org/project/morecantile/
 
 Package license: MIT
 
 Summary: Construct and use map tile grids (a.k.a TileMatrixSet / TMS).
 
+Development: https://github.com/developmentseed/morecantile
+
+Documentation: https://developmentseed.org/morecantile/
+
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11783&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/morecantile-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/morecantile-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/morecantile-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -39,31 +44,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `morecantile` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install morecantile
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install morecantile
 ```
 
-It is possible to list all of the versions of `morecantile` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add morecantile
+# for installing globally
+pixi global install morecantile
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `morecantile` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search morecantile --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search morecantile --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search morecantile --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -75,6 +122,8 @@ mamba repoquery whoneeds morecantile --channel conda-forge
 # List dependencies of `morecantile`:
 mamba repoquery depends morecantile --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
