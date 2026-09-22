@@ -3,11 +3,15 @@ About morecantile-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/morecantile-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/developmentseed/morecantile
+Home: https://pypi.org/project/morecantile/
 
 Package license: MIT
 
 Summary: Construct and use map tile grids (a.k.a TileMatrixSet / TMS).
+
+Development: https://github.com/developmentseed/morecantile
+
+Documentation: https://developmentseed.org/morecantile/
 
 Current build status
 ====================
